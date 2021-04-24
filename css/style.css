@@ -6624,7 +6624,9 @@ button.bg-dark:focus {
 
 .mt-4,
 .my-4 {
-  margin-top: 1.5rem !important; }
+  margin-top: 1.5rem !important;
+  text-align: justify;
+  text-justify: inter-word; }
 
 .mr-4,
 .mx-4 {
@@ -8138,7 +8140,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  color: #999999; }
+  color: floralwhite; }
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -8158,8 +8160,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: white;
-  font-weight: 400; }
+  color: white; }
 
 .text-primary {
   color: #ffbd39 !important; }
@@ -8807,9 +8808,9 @@ h1, h2, h3, h4, h5,
     font-size: 26px;
     color: #ffbd39; }
   .resume-wrap h2 {
-    font-size: 26px; }
+    font-size: 27px; }
   .resume-wrap .position {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase; }
