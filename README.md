@@ -32,12 +32,14 @@ The portfolio is designed to emphasize machine learning expertise:
 ### Installation
 
 1. Clone the repository
+
 ```bash
 git clone https://github.com/vedantsahai18/nextjs-portfolio.git
 cd nextjs-portfolio
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
 # or
@@ -45,6 +47,7 @@ yarn install
 ```
 
 3. Start the development server
+
 ```bash
 npm run dev
 # or

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
+import BackToTop from './BackToTop'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -50,7 +51,8 @@ export default function Navbar() {
   }
 
   return (
-    <nav 
+    <>
+      <nav 
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled ? 'bg-dark bg-opacity-95 backdrop-blur-sm shadow-md' : 'bg-transparent'
       }`}
@@ -137,6 +139,9 @@ export default function Navbar() {
           </div>
         )}
       </Transition>
-    </nav>
+      </nav>
+      {/* Scroll to top button */}
+      <BackToTop />
+    </>
   )
 }
