@@ -1,12 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  // This configuration allows using NextJS on GitHub Pages
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/nextjs-portfolio' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/nextjs-portfolio' : '',
-}
+const isProd = process.env.NODE_ENV === 'production';
 
-module.exports = nextConfig
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    unoptimized: true, // Disable default image optimization
+  },
+  assetPrefix: isProd ? '/vedantsahai18.github.io/' : '',
+  basePath: isProd ? '/vedantsahai18.github.io' : '',
+  output: 'export'
+};
+
+module.exports = nextConfig;

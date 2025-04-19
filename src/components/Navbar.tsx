@@ -18,10 +18,11 @@ export default function Navbar() {
       
       // Update active section based on scroll position
       const sections = document.querySelectorAll('section[id]')
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100
-        const sectionHeight = section.offsetHeight
-        const sectionId = section.getAttribute('id')
+      sections.forEach((section) => {
+        const htmlSection = section as HTMLElement
+        const sectionTop = htmlSection.offsetTop - 100
+        const sectionHeight = htmlSection.offsetHeight
+        const sectionId = htmlSection.getAttribute('id')
         
         if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight && sectionId) {
           setActiveSection(sectionId)

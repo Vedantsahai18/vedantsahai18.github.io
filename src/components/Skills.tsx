@@ -101,7 +101,6 @@ export default function Skills() {
                       />
                     </svg>
                     <div className="absolute inset-0 flex items-center justify-center flex-col">
-                      <span className="text-2xl">{skill.icon}</span>
                       <span className="font-bold text-lg text-primary">{skill.level}%</span>
                     </div>
                   </div>
